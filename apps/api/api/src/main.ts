@@ -5,6 +5,8 @@
 
 import express from 'express';
 import * as path from 'path';
+import { DBHelper } from './app/helper/db.helper';
+
 
 const app = express();
 
@@ -19,3 +21,4 @@ const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
 });
 server.on('error', console.error);
+DBHelper.init();
