@@ -1,5 +1,7 @@
 {
   "plugins": [
+    "postcss-mixins",
+    "postcss-simple-vars",
     "postcss-flexbugs-fixes",
     [
       "postcss-preset-env",
