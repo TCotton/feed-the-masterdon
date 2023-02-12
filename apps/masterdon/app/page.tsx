@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <h1>This is the header here</h1>
-        <p>
+        <p className={styles.paragraph}>This is the header here</p>
+        <p >
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>

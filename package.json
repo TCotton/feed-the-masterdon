@@ -16,7 +16,7 @@
     "dev": "next dev",
     "lint:script": "nx workspace-lint && nx lint",
     "lint:script:fix": "nx workspace-lint && nx lint --fix",
-    "lint:style": "nx affected --target=stylelint",
+    "lint:style": "nx affected --target=stylelint --allow-empty-input",
     "e2e": "nx e2e",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",
