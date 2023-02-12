@@ -63,6 +63,13 @@
       "options": {
         "lintFilePatterns": ["apps/masterdon/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/masterdon/**/*.css"]
+      }
     }
   },
   "tags": []

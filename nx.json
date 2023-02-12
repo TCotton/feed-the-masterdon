@@ -1,55 +1,10 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "implicitDependencies": {
+    ".stylelintrc.json": "*"
+  },
   "npmScope": "masterdon",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "accessToken": "ZDc0OWRjOWMtMWZhZC00ODM1LWE2NjAtNzEwOTBlNDIzODk2fHJlYWQtd3JpdGU="
-      }
-    }
-  },
-  "targetDefaults": {
-    "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
-    },
-    "test": {
-      "inputs": [
-        "default",
-        "^production",
-        "{workspaceRoot}/jest.preset.js"
-      ]
-    },
-    "e2e": {
-      "inputs": [
-        "default",
-        "^production"
-      ]
-    },
-    "lint": {
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json"
-      ]
-    }
-  },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -57,9 +12,31 @@
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/.eslintrc.json"
     ],
-    "sharedGlobals": [
-      "{workspaceRoot}/babel.config.json"
-    ]
+    "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "test": {
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+    },
+    "e2e": {
+      "inputs": ["default", "^production"]
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
+        "accessToken": "ZDc0OWRjOWMtMWZhZC00ODM1LWE2NjAtNzEwOTBlNDIzODk2fHJlYWQtd3JpdGU="
+      }
+    }
   },
   "generators": {
     "@nrwl/react": {
