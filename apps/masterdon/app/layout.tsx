@@ -1,7 +1,6 @@
 import React from 'react'
 import './globals.css'
-import './styles/_postcss_variables.css'
-import './styles/_postcss_mixins.css'
+
 export default function RootLayout({
   children,
 }: {

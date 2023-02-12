@@ -7,7 +7,10 @@ module.exports = {
     },
     // 'postcss-reporter': { clearReportedMessages: true },
     'postcss-simple-vars': {
-      silent: false
+      silent: false,
+      variables: function () {
+        return require('./apps/masterdon/app/styles/config/vars.js');
+      }
     },
     // This plugin has all the official POSTCSS plugins available to it OOTB
     'postcss-preset-env': {
