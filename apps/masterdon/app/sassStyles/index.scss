@@ -2,3 +2,12 @@
 @import 'reset';
 @import 'sass_variables';
 @import 'mixins';
+
+body {
+  font-size: #{$baseFontSize};
+  font-family: $baseFontFamily;
+  line-height: #{$baseLineHeight}em;
+}
+h1 {
+  @include font-calculator($baseFontFamily, 12px)
+}
