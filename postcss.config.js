@@ -12,6 +12,12 @@ module.exports = {
         return require('./apps/masterdon/app/styles/config/vars.js');
       }
     },
+    'postcss-strip-units': {
+      stripAll: true,
+    },
+   /* 'postcss-conditionals-renewed': {
+      silent: false,
+    },*/
     // This plugin has all the official POSTCSS plugins available to it OOTB
     'postcss-preset-env': {
       // Disable MS version of Grid spec being output

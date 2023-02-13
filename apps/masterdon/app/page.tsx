@@ -9,7 +9,6 @@ export default function Home() {
     <main className={styles.main}>
       <h1>This is the title of the page</h1>
       <div className={styles.description}>
-
         <p className={styles.paragraph}>This is the header here</p>
         <p>
           Get started by editing&nbsp;

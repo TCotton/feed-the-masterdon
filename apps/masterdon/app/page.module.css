@@ -12,6 +12,10 @@
   border: 1px solid $colorPrimary;
 }
 
+.foo {
+  font-size: strip(2em);
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

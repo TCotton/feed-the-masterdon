@@ -8,6 +8,21 @@
     background: $color;
   }
 }
+/*@define-mixin fontCalculator $fontFamily, $fontSize {
+  font-family: $fontFamily;
+//font-size: calc($fontSize / var(--base-font-size))em;
+//font-size: #{$fontSizeEm}#{"em"};
+}*/
 @define-mixin background {
   background: yellow!important;
 }
+
+/*
+baseLineHeight: 2.5,
+  colorPrimary: "#000",
+  baseFontSize: 10,
+ */
+
+
+
+

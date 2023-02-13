@@ -8,6 +8,7 @@ body {
   font-family: $baseFontFamily;
   line-height: #{$baseLineHeight}em;
 }
+
 h1 {
   @include font-calculator($baseFontFamily, 12px)
 }
