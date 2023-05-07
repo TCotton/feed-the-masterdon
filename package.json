@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@nx/node": "^16.1.1",
+    "nx": "^16.1.1"
+  },
+  "name": "feed-the-masterdon",
+  "version": "1.0.0",
+  "description": "feed the masterdon node and next packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TCotton/feed-the-masterdon.git"
+  },
+  "author": "Andrew Walpole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TCotton/feed-the-masterdon/issues"
+  },
+  "homepage": "https://github.com/TCotton/feed-the-masterdon#readme",
+  "engines": {
+    "npm": "9.5.1",
+    "node": "18.16.0"
+  }
+}
